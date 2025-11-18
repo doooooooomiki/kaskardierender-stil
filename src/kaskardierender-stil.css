@@ -1,1 +1,57 @@
 @import 'tailwindcss';
+
+@theme {
+  /* @link https://utopia.fyi/type/calculator?c=360,18,1.2,1240,20,1.25,6,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+  --text-*: initial;
+  --text-xs: clamp(0.7813rem, 0.7736rem + 0.0341vw, 0.8rem);
+  --text-sm: clamp(0.9375rem, 0.9119rem + 0.1136vw, 1rem);
+  --text-base: clamp(1.125rem, 1.0739rem + 0.2273vw, 1.25rem);
+  --text-lg: clamp(1.35rem, 1.2631rem + 0.3864vw, 1.5625rem);
+  --text-xl: clamp(1.62rem, 1.4837rem + 0.6057vw, 1.9531rem);
+  --text-2xl: clamp(1.944rem, 1.7405rem + 0.9044vw, 2.4414rem);
+  --text-3xl: clamp(2.3328rem, 2.0387rem + 1.3072vw, 3.0518rem);
+  --text-4xl: clamp(2.7994rem, 2.384rem + 1.8461vw, 3.8147rem);
+  --text-5xl: clamp(3.3592rem, 2.7828rem + 2.5621vw, 4.7684rem);
+}
+
+@layer base {
+  h1,
+  .h1 {
+    font-size: var(--text-5xl);
+  }
+
+  h2,
+  .h2 {
+    font-size: var(--text-4xl);
+  }
+
+  h3,
+  .h3 {
+    font-size: var(--text-3xl);
+  }
+
+  h4,
+  .h4 {
+    font-size: var(--text-2xl);
+  }
+
+  h5,
+  .h5 {
+    font-size: var(--text-xl);
+  }
+
+  h6,
+  .h6 {
+    font-size: var(--text-lg);
+  }
+
+  p,
+  .p {
+    font-size: var(--text-base);
+  }
+
+  small,
+  .small {
+    font-size: var(--text-sm);
+  }
+}
