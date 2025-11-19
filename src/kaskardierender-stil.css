@@ -12,46 +12,66 @@
   --text-3xl: clamp(2.3328rem, 2.0387rem + 1.3072vw, 3.0518rem);
   --text-4xl: clamp(2.7994rem, 2.384rem + 1.8461vw, 3.8147rem);
   --text-5xl: clamp(3.3592rem, 2.7828rem + 2.5621vw, 4.7684rem);
+
+  /* @link https://utopia.fyi/space/calculator?c=360,18,1.2,1240,20,1.25,6,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+  --spacing-*: initial;
+  --spacing-3xs: clamp(0.3125rem, 0.3125rem + 0vw, 0.3125rem);
+  --spacing-2xs: clamp(0.5625rem, 0.5369rem + 0.1136vw, 0.625rem);
+  --spacing-xs: clamp(0.875rem, 0.8494rem + 0.1136vw, 0.9375rem);
+  --spacing-s: clamp(1.125rem, 1.0739rem + 0.2273vw, 1.25rem);
+  --spacing-m: clamp(1.6875rem, 1.6108rem + 0.3409vw, 1.875rem);
+  --spacing-l: clamp(2.25rem, 2.1477rem + 0.4545vw, 2.5rem);
+  --spacing-xl: clamp(3.375rem, 3.2216rem + 0.6818vw, 3.75rem);
+  --spacing-2xl: clamp(4.5rem, 4.2955rem + 0.9091vw, 5rem);
+  --spacing-3xl: clamp(6.75rem, 6.4432rem + 1.3636vw, 7.5rem);
 }
 
 @layer base {
   h1,
   .h1 {
     font-size: var(--text-5xl);
+    margin-block-end: var(--spacing-m);
   }
 
   h2,
   .h2 {
     font-size: var(--text-4xl);
+    margin-block-end: var(--spacing-s);
   }
 
   h3,
   .h3 {
     font-size: var(--text-3xl);
+    margin-block-end: var(--spacing-xs);
   }
 
   h4,
   .h4 {
     font-size: var(--text-2xl);
+    margin-block-end: var(--spacing-xs);
   }
 
   h5,
   .h5 {
     font-size: var(--text-xl);
+    margin-block-end: var(--spacing-xs);
   }
 
   h6,
   .h6 {
     font-size: var(--text-lg);
+    margin-block-end: var(--spacing-xs);
   }
 
   p,
   .p {
     font-size: var(--text-base);
+    margin-block-end: var(--spacing-2xs);
   }
 
   small,
   .small {
     font-size: var(--text-sm);
+    margin-block-end: var(--spacing-3xs);
   }
 }
